@@ -8,7 +8,7 @@
         $dados = array(
             "tipo" => 'error',
             "mensagem" => 'Existe(m) campo(s) obrigatório(s) não preenchido(s).'
-        )
+        );
 
     } else {
 
