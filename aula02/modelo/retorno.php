@@ -27,7 +27,7 @@
         }
         else {
             $dados = array(
-                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita e '.$bebida.' e voce pode ingerir bebida alcoólica.' 
+                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e voce pode ingerir bebida alcoólica.' 
             );
         }
 
