@@ -4,23 +4,30 @@
     $nasc = $_REQUEST['nasc'];
     $bebida = $_REQUEST['bebida'];
 
-    if(empty($nome)){
+    $date1 = new DateTime('now');
+    $date2 = new DateTime($nasc);
 
+    $i = $date1 -> diff($date2);
+    
+    if(empty($nome)){
+        
         $dados = array(
             "tipo" => 'error',
             "mensagem" => 'Existe(m) campo(s) obrigatório(s) não preenchido(s).'
         );
-
+        
     } else {
 
-        if($idade >= 18) {
+        if($i->y < 18) {
             $dados = array(
-                "mensagem" => 'Ola, '.$nome.', sabemos que sua bebida favorita e '.$bebida.' e voce não pode ingerir bebida alcoolica.' 
+
+                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e voce não pode ingerir bebida alcoólica.'
+
             );
         }
         else {
             $dados = array(
-                "mensagem" => 'Ola, '.$nome.', sabemos que sua bebida favorita e '.$bebida.' e voce pode ingerir bebida alcoolica.' 
+                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita e '.$bebida.' e voce pode ingerir bebida alcoólica.' 
             );
         }
 
