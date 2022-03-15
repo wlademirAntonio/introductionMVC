@@ -21,13 +21,13 @@
         if($i->y < 18) {
             $dados = array(
 
-                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e voce não pode ingerir bebida alcoólica.'
+                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e você não pode ingerir bebida alcoólica.'
 
             );
         }
         else {
             $dados = array(
-                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e voce pode ingerir bebida alcoólica.' 
+                "mensagem" => 'Olá, '.$nome.', sabemos que sua bebida favorita é '.$bebida.' e você pode ingerir bebida alcoólica.' 
             );
         }
 
